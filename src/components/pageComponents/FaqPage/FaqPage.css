@@ -1,0 +1,55 @@
+.faqPageContainer {
+  height: 77.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.faqPageContainer .faqContainer {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  height: 98%;
+  width: 50%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.faqPageContainer .faqContainer div {
+  width: auto;
+  height: auto;
+  margin: 2rem;
+  text-align: justify;
+  font-weight: 300;
+}
+.faqPageContainer .faqContainer div:nth-child(even) {
+  font-weight: 700;
+}
+.faqPageContainer .faqContainer div:nth-child(1) {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+.faqContainer::-webkit-scrollbar {
+  width: 1px;
+}
+
+.faqContainer::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+.faqContainer::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1000px) {
+  .faqPageContainer {
+    align-items: space-between;
+  }
+  .faqPageContainer .faqContainer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) and (max-width: 600px) {
+  .faqPageContainer .faqContainer {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=FaqPage.css.map */

@@ -1,0 +1,9 @@
+@import "../../../stylesConfig/stylesConfig.scss";
+
+.checkoutPageContainer {
+  height: $pageContainerHeight;
+  width: $oneHundredPer;
+  display: $flexDisplay;
+  justify-content: $center;
+  align-items: $center;
+}

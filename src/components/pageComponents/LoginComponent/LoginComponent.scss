@@ -1,0 +1,55 @@
+@import "../../../stylesConfig/stylesConfig.scss";
+
+.loginComponentContainer {
+  height: $pageContainerHeight;
+  display: $flexDisplay;
+  justify-content: $center;
+  align-items: $center;
+
+  div {
+    height: auto;
+    width: 50%;
+
+    form {
+      display: $flexDisplay;
+      flex-direction: $flexDirectionColumn;
+      align-items: $center;
+
+      input {
+        height: 2rem;
+        width: 100%;
+        margin: 1rem;
+        border: none;
+        border-bottom: 1px solid transparent;
+        text-align: $center;
+        font-weight: 300;
+      }
+
+      input:hover {
+        border-bottom: 1px solid black;
+        transition: 0.5s;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      button {
+        border: none;
+      }
+
+      .loginBtn {
+        background-color: white;
+        text-decoration: none;
+        color: black;
+        font-weight: 300;
+      }
+
+      .loginBtn:hover {
+        font-weight: 500;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+    }
+  }
+}

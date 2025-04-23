@@ -1,0 +1,80 @@
+@import "../../../stylesConfig/stylesConfig.scss";
+
+.pageContainer {
+  height: $pageContainerHeight;
+  width: $oneHundredPer;
+  display: $flexDisplay;
+  justify-content: $center;
+  align-items: $center;
+}
+
+.formContainer {
+  height: 90%;
+  width: 45%;
+}
+
+.contactForm {
+  display: $flexDisplay;
+  flex-direction: $flexDirectionColumn;
+  align-items: $center;
+  justify-content: space-between;
+  height: $oneHundredPer;
+  width: $oneHundredPer;
+  text-decoration: none;
+
+  input {
+    height: 10%;
+    width: $oneHundredPer;
+    text-align: $center;
+    border: none;
+    border-bottom: 1px solid transparent;
+    font-weight: 500;
+  }
+
+  input:hover {
+    border-bottom: 1px solid black;
+    transition: 0.5s;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  textarea {
+    height: 40%;
+    width: $oneHundredPer;
+    border: none;
+    text-align: $center;
+    border-bottom: 1px solid transparent;
+    font-weight: 300;
+  }
+
+  textarea:hover {
+    border-bottom: 1px solid black;
+    transition: 0.5s;
+  }
+
+  textarea:focus {
+    outline: none;
+  }
+
+  button {
+    height: 10%;
+    width: fit-content;
+    border: none;
+    background-color: white;
+  }
+
+  button:hover {
+    font-weight: 500;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .formContainer {
+    height: $hundredPer;
+    width: 80%;
+  }
+}

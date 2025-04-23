@@ -1,0 +1,75 @@
+@import "../../../stylesConfig/stylesConfig.scss";
+
+.reviewsPageContainer {
+  height: $pageContainerHeight;
+  display: $flexDisplay;
+  justify-content: $center;
+  align-items: $center;
+
+  div {
+    height: 98%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 50%;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    span {
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    img {
+      height: 100px;
+      width: 100px;
+      margin: 1rem;
+    }
+
+    div:nth-child(1) {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    div {
+      height: auto;
+      width: 90%;
+      margin: 2rem;
+      font-weight: 300;
+      text-align: justify;
+    }
+  }
+}
+
+.reviewsContainer::-webkit-scrollbar {
+  width: 1px;
+}
+
+.reviewsContainer::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+.reviewsContainer::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1000px) {
+  .reviewsPageContainer {
+    div {
+      width: $hundredPer;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .reviewsPageContainer {
+    div {
+      font-size: 0.8rem;
+      justify-content: $center;
+
+      div {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}

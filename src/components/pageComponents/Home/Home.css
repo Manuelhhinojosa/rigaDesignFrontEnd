@@ -1,0 +1,60 @@
+.homePageContainer {
+  height: 77.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homePageContainer .test {
+  display: none;
+}
+.homePageContainer div {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homePageContainer div div:nth-child(1) {
+  height: 70%;
+  width: 90%;
+}
+.homePageContainer div div:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.homePageContainer div div:nth-child(2) {
+  height: 30%;
+  width: 90%;
+  text-align: justify;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1000px) {
+  .homePageContainer div {
+    display: none;
+  }
+  .homePageContainer .test {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    font-size: 5rem;
+  }
+  .homePageContainer .test span {
+    font-size: 1rem;
+    text-align: justify;
+    margin: 1rem;
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 600px) {
+  .test {
+    background-color: black;
+    color: white;
+  }
+  .test span {
+    display: none;
+  }
+}/*# sourceMappingURL=Home.css.map */

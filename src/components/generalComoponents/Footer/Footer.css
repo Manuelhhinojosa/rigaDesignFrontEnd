@@ -1,0 +1,10 @@
+.footerContainer {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerIcon {
+  margin: 1rem;
+}/*# sourceMappingURL=Footer.css.map */

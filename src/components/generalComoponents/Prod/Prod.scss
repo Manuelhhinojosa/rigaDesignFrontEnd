@@ -1,0 +1,62 @@
+@import "../../../stylesConfig/stylesConfig.scss";
+
+.Container {
+  height: 400px;
+  width: 350px;
+  display: $flexDisplay;
+  flex-direction: $flexDirectionColumn;
+  margin: 3rem;
+}
+
+.imgContainer {
+  height: 75%;
+  width: $oneHundredPer;
+
+  img {
+    height: $oneHundredPer;
+    width: $oneHundredPer;
+    object-fit: cover;
+  }
+}
+
+.textContainer {
+  height: 25%;
+  width: $oneHundredPer;
+  display: $flexDisplay;
+  flex-direction: $flexDirectionRow;
+}
+
+.left {
+  height: $oneHundredPer;
+  width: 60%;
+  font-size: 0.8rem;
+  display: $flexDisplay;
+  flex-direction: $flexDirectionColumn;
+  justify-content: space-evenly;
+  align-items: $center;
+
+  div {
+    text-align: $center;
+    font-weight: 300;
+  }
+}
+
+.right {
+  height: $oneHundredPer;
+  width: 40%;
+  font-size: 0.8rem;
+  display: $flexDisplay;
+  flex-direction: $flexDirectionColumn;
+  justify-content: space-evenly;
+  align-items: flex-end;
+
+  div {
+    font-weight: 300;
+  }
+
+  div:nth-child(2):hover {
+    font-weight: 500;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+}

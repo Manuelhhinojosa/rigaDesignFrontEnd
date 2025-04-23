@@ -1,0 +1,86 @@
+@import "../../../stylesConfig/stylesConfig.scss";
+
+.aboutPageContainer {
+  height: $pageContainerHeight;
+  display: $flexDisplay;
+  justify-content: $center;
+  align-items: $center;
+
+  div {
+    height: 65%;
+    width: 35%;
+    display: $flexDisplay;
+    justify-content: $center;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    img {
+      height: $oneHundredPer;
+      width: $oneHundredPer;
+      object-fit: cover;
+    }
+
+    span {
+      font-weight: 300;
+      font-size: 2rem;
+    }
+
+    p {
+      text-align: justify;
+      margin: 0rem 2rem 0rem 2rem;
+      font-weight: 300;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    a:hover {
+      font-weight: 300;
+      transition: 0.5s;
+    }
+  }
+}
+
+.aboutTextContainer::-webkit-scrollbar {
+  width: 1px;
+}
+
+.aboutTextContainer::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+.aboutTextContainer::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1000px) {
+  .aboutPageContainer {
+    div:nth-child(1) {
+      flex: 1;
+      height: 90%;
+      margin-left: 1rem;
+    }
+
+    div:nth-child(2) {
+      flex: 2;
+      height: 75%;
+      justify-content: $center;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutPageContainer {
+    div:nth-child(1) {
+      display: none;
+    }
+
+    div:nth-child(2) {
+      font-size: 0.8rem;
+      align-items: start;
+      height: fit-content;
+    }
+  }
+}

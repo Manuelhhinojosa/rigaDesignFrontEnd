@@ -1,0 +1,73 @@
+.aboutPageContainer {
+  height: 77.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutPageContainer div {
+  height: 65%;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.aboutPageContainer div img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.aboutPageContainer div span {
+  font-weight: 300;
+  font-size: 2rem;
+}
+.aboutPageContainer div p {
+  text-align: justify;
+  margin: 0rem 2rem 0rem 2rem;
+  font-weight: 300;
+}
+.aboutPageContainer div a {
+  color: black;
+  text-decoration: none;
+}
+.aboutPageContainer div a:hover {
+  font-weight: 300;
+  transition: 0.5s;
+}
+
+.aboutTextContainer::-webkit-scrollbar {
+  width: 1px;
+}
+
+.aboutTextContainer::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+.aboutTextContainer::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1000px) {
+  .aboutPageContainer div:nth-child(1) {
+    flex: 1;
+    height: 90%;
+    margin-left: 1rem;
+  }
+  .aboutPageContainer div:nth-child(2) {
+    flex: 2;
+    height: 75%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .aboutPageContainer div:nth-child(1) {
+    display: none;
+  }
+  .aboutPageContainer div:nth-child(2) {
+    font-size: 0.8rem;
+    align-items: start;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}/*# sourceMappingURL=AboutPage.css.map */

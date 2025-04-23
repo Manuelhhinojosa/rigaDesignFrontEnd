@@ -1,0 +1,8 @@
+@import "../../../stylesConfig/stylesConfig.scss";
+
+.shopPageContainer {
+  height: $pageContainerHeight;
+  display: $flexDisplay;
+  justify-content: $center;
+  align-items: $center;
+}

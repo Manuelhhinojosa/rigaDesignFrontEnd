@@ -1,0 +1,65 @@
+.shopMenuLinkBigScreen {
+  height: 77.5vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.shopMenuLinkBigScreen div:nth-child(1) {
+  display: none;
+}
+.shopMenuLinkBigScreen div {
+  height: 60%;
+  width: 30%;
+  margin: 1rem;
+}
+.shopMenuLinkBigScreen img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 1000px) {
+  .shopMenuLinkBigScreen {
+    flex-direction: column;
+  }
+  .shopMenuLinkBigScreen div:nth-child(1) {
+    display: none;
+  }
+  .shopMenuLinkBigScreen div {
+    height: 30%;
+    width: 70%;
+    margin: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .shopMenuLinkBigScreen div:nth-child(1) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .shopMenuLinkBigScreen div:nth-child(1) .shopMenuLinkBigScreenLink {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    font-size: 2rem;
+    margin: 1rem;
+  }
+  .shopMenuLinkBigScreen div:nth-child(1) p {
+    font-size: 1.5rem;
+  }
+  .shopMenuLinkBigScreen div:nth-child(1) .shopMenuLinkBigScreenLink:hover {
+    font-weight: 500;
+    transition: 0.5s;
+  }
+  .shopMenuLinkBigScreen div:nth-child(2) {
+    display: none;
+  }
+  .shopMenuLinkBigScreen div:nth-child(3) {
+    display: none;
+  }
+}/*# sourceMappingURL=ShopMenuComponent.css.map */

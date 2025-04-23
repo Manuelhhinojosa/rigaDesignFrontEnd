@@ -1,0 +1,23 @@
+@import "../../../stylesConfig/stylesConfig.scss";
+
+.shopContainer {
+  height: 98%;
+  overflow: hidden;
+  overflow-y: scroll;
+  display: $flexDisplay;
+  flex-direction: $flexDirectionRow;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.shopContainer::-webkit-scrollbar {
+  width: 1px;
+}
+
+.shopContainer::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+.shopContainer::-webkit-scrollbar-track {
+  background-color: transparent;
+}

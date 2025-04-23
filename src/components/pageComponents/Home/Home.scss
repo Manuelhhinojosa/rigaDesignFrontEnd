@@ -1,0 +1,72 @@
+@import "../../../stylesConfig/stylesConfig.scss";
+
+.homePageContainer {
+  height: $pageContainerHeight;
+  display: $flexDisplay;
+  justify-content: $center;
+  align-items: $center;
+
+  .test {
+    display: none;
+  }
+
+  div {
+    height: 90%;
+    width: 90%;
+    display: $flexDisplay;
+    flex-direction: $flexDirectionColumn;
+    justify-content: $center;
+    align-items: $center;
+
+    div:nth-child(1) {
+      height: 70%;
+      width: 90%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    div:nth-child(2) {
+      height: 30%;
+      width: 90%;
+      text-align: justify;
+      font-weight: 300;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .homePageContainer {
+    div {
+      display: none;
+    }
+
+    .test {
+      display: $flexDisplay;
+      height: $hundredPer;
+      width: $hundredPer;
+      font-size: 5rem;
+
+      span {
+        font-size: 1rem;
+        text-align: justify;
+        margin: 1rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .test {
+    background-color: black;
+    color: white;
+
+    span {
+      display: none;
+    }
+  }
+}

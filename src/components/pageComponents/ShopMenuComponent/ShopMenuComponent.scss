@@ -1,0 +1,79 @@
+@import "../../../stylesConfig/stylesConfig.scss";
+
+.shopMenuLinkBigScreen {
+  height: $pageContainerHeight;
+  width: $oneHundredPer;
+  display: $flexDisplay;
+  flex-direction: $flexDirectionRow;
+  align-items: $center;
+  justify-content: $center;
+
+  div:nth-child(1) {
+    display: none;
+  }
+
+  div {
+    height: 60%;
+    width: 30%;
+    margin: 1rem;
+  }
+
+  img {
+    height: $hundredPer;
+    width: $hundredPer;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .shopMenuLinkBigScreen {
+    flex-direction: column;
+
+    div:nth-child(1) {
+      display: none;
+    }
+
+    div {
+      height: 30%;
+      width: 70%;
+      margin: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .shopMenuLinkBigScreen {
+    div:nth-child(1) {
+      width: 100%;
+      display: $flexDisplay;
+      flex-direction: $flexDirectionColumn;
+      justify-content: $center;
+      align-items: $center;
+
+      .shopMenuLinkBigScreenLink {
+        text-decoration: none;
+        color: black;
+        font-weight: 300;
+        font-size: 2rem;
+        margin: 1rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+
+      .shopMenuLinkBigScreenLink:hover {
+        font-weight: 500;
+        transition: 0.5s;
+      }
+    }
+
+    div:nth-child(2) {
+      display: none;
+    }
+
+    div:nth-child(3) {
+      display: none;
+    }
+  }
+}

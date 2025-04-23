@@ -1,0 +1,12 @@
+@import "./../../../stylesConfig/stylesConfig.scss";
+
+.footerContainer {
+  height: 5vh;
+  display: $flexDisplay;
+  justify-content: $center;
+  align-items: center;
+}
+
+.footerIcon {
+  margin: 1rem;
+}
