@@ -29,7 +29,7 @@ export const AboutPage = () => {
           {staticText.aboutText.slice(422, 1013)}
           <br />
           <br />
-          <a href="https://mariselafierro.netlify.app/">
+          <a href="https://mariselafierro.netlify.app/" target="#">
             Visit creator's site & blog
           </a>
         </p>
