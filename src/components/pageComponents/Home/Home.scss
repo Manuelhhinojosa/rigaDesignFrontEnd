@@ -6,7 +6,7 @@
   justify-content: $center;
   align-items: $center;
 
-  .test {
+  .textMedium {
     display: none;
   }
 
@@ -19,7 +19,7 @@
     align-items: $center;
 
     div:nth-child(1) {
-      height: 70%;
+      height: 60%;
       width: 90%;
 
       img {
@@ -30,10 +30,15 @@
     }
 
     div:nth-child(2) {
-      height: 30%;
+      height: 40%;
       width: 90%;
       text-align: justify;
       font-weight: 300;
+      overflow: hidden;
+      overflow-y: scroll;
+      display: flex;
+      justify-content: start;
+      padding: 1rem;
     }
   }
 }
@@ -44,7 +49,7 @@
       display: none;
     }
 
-    .test {
+    .textMedium {
       display: $flexDisplay;
       height: $hundredPer;
       width: $hundredPer;
@@ -61,7 +66,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .test {
+  .textMedium {
     background-color: black;
     color: white;
 

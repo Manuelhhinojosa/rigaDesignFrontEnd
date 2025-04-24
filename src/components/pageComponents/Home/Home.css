@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
 }
-.homePageContainer .test {
+.homePageContainer .textMedium {
   display: none;
 }
 .homePageContainer div {
@@ -16,7 +16,7 @@
   align-items: center;
 }
 .homePageContainer div div:nth-child(1) {
-  height: 70%;
+  height: 60%;
   width: 90%;
 }
 .homePageContainer div div:nth-child(1) img {
@@ -26,23 +26,28 @@
      object-fit: cover;
 }
 .homePageContainer div div:nth-child(2) {
-  height: 30%;
+  height: 40%;
   width: 90%;
   text-align: justify;
   font-weight: 300;
+  overflow: hidden;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: start;
+  padding: 1rem;
 }
 
 @media screen and (max-width: 1000px) {
   .homePageContainer div {
     display: none;
   }
-  .homePageContainer .test {
+  .homePageContainer .textMedium {
     display: flex;
     height: 100%;
     width: 100%;
     font-size: 5rem;
   }
-  .homePageContainer .test span {
+  .homePageContainer .textMedium span {
     font-size: 1rem;
     text-align: justify;
     margin: 1rem;
@@ -50,11 +55,11 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .test {
+  .textMedium {
     background-color: black;
     color: white;
   }
-  .test span {
+  .textMedium span {
     display: none;
   }
 }/*# sourceMappingURL=Home.css.map */

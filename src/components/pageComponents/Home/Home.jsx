@@ -13,15 +13,27 @@ export const Home = () => {
 
   return (
     <div className="homePageContainer">
-      <div className="test">
+      <div className="textMedium">
         {staticText.homeTitle}
-        <span>{staticText.homeText}</span>
+        <span>
+          {staticText.homeText.slice(0, 310)}
+          <br /> <br />
+          {staticText.homeText.slice(310, 630)}
+          <br /> <br />
+          {staticText.homeText.slice(630)}
+        </span>
       </div>
       <div>
         <div>
           <img src={staticImages.homeImageUrl} alt="Home-Image" />
         </div>
-        <div>{staticText.homeText}</div>
+        <div>
+          {staticText.homeText.slice(0, 310)}
+          <br /> <br />
+          {staticText.homeText.slice(310, 630)}
+          <br /> <br />
+          {staticText.homeText.slice(630)}
+        </div>
       </div>
     </div>
   );
