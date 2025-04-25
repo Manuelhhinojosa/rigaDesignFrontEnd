@@ -28,12 +28,13 @@
 .homePageContainer div div:nth-child(2) {
   height: 40%;
   width: 90%;
-  text-align: justify;
+  text-align: center;
   font-weight: 300;
+  font-size: 1.5rem;
   overflow: hidden;
   overflow-y: scroll;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   padding: 1rem;
 }
 
@@ -48,8 +49,8 @@
     font-size: 5rem;
   }
   .homePageContainer .textMedium span {
-    font-size: 1rem;
-    text-align: justify;
+    font-size: 1.5rem;
+    text-align: center;
     margin: 1rem;
     font-weight: 300;
   }
