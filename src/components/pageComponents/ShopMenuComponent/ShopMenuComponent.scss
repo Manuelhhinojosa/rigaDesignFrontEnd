@@ -23,6 +23,12 @@
     width: $hundredPer;
     object-fit: cover;
   }
+
+  p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -64,7 +70,7 @@
 
       .shopMenuLinkBigScreenLink:hover {
         font-weight: 500;
-        transition: 0.5s;
+        transition: 0.5s all ease;
       }
     }
 

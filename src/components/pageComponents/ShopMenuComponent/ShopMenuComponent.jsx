@@ -26,7 +26,7 @@ export const ShopMenuComponent = () => {
           onClick={() => dispatch(setShowJewelleryTofalse())}
           className="shopMenuLinkBigScreenLink"
         >
-          prints
+          Design
         </Link>
 
         <Link
@@ -46,6 +46,7 @@ export const ShopMenuComponent = () => {
         >
           <img src={staticImages.mainShopMenuImageImageUrl} alt="linkImaage" />
         </Link>
+        <p>Design</p>
       </div>
       <div>
         <Link
@@ -55,6 +56,7 @@ export const ShopMenuComponent = () => {
         >
           <img src={staticImages.mainShopMenuImageImageUrl2} alt="linkImaage" />
         </Link>
+        <p>Jewellwery</p>
       </div>
     </div>
   );
