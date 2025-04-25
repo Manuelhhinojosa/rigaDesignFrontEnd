@@ -51,13 +51,13 @@
     height: 70%;
     width: 70%;
     object-fit: cover;
+    transition: all 1s ease;
   }
 
   img:hover {
-    height: 95%;
-    width: 95%;
+    height: 90%;
+    width: 90%;
     cursor: zoom-in;
-    transition: 1s;
   }
 }
 

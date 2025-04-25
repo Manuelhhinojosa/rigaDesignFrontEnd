@@ -47,12 +47,12 @@
   width: 70%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 1s ease;
 }
 .singleImageContainer img:hover {
-  height: 95%;
-  width: 95%;
+  height: 90%;
+  width: 90%;
   cursor: zoom-in;
-  transition: 1s;
 }
 
 .shopTextContainer {
