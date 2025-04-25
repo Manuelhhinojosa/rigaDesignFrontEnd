@@ -54,7 +54,7 @@ export const SingleProduct = () => {
         <div>{product[0].longDesc}</div>
         <div className="button">Add to cart</div>
         <div className="button">
-          <Link className="backLink" to="/shopmenu">
+          <Link className="backLink" to="/shopproducts">
             Back to shop
           </Link>
         </div>
